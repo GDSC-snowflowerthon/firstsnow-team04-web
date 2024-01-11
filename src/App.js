@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './assets/snowman-2.svg';
 import './App.css';
 
 function App() {
