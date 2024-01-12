@@ -6,6 +6,7 @@ import MyPage from "./pages/MyPage";
 import FriendPage from "./pages/FriendPage";
 import WriteMailPage from "./pages/WriteMailPage";
 import MailboxPage from "./pages/MailboxPage";
+import MailPage from "./pages/MailPage";
 import SettingPage from "./pages/SettingPages/SettingPage";
 import SearchPage from "./pages/SettingPages/SearchPage";
 import ChangeSnowmanPage from "./pages/SettingPages/ChangeSnowmanPage";
@@ -24,6 +25,7 @@ function App() {
         <Route path="/friend" element={<FriendPage></FriendPage>}></Route>
         <Route path="/writeMail" element={<WriteMailPage></WriteMailPage>}></Route>
         <Route path="/mailboxList" element={<MailboxPage></MailboxPage>}></Route>
+        <Route path="/mailpage" element={<MailPage></MailPage>}></Route>
         
         <Route path="/setting">
           <Route index element={<SettingPage></SettingPage>}></Route>

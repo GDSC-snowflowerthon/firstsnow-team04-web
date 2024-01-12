@@ -6,12 +6,16 @@ const IMG = {
   ["open"]: opened,
   ["close"]: closed,
 };
+const envelopeClass = {
+  ["open"]: "Envelope-open",
+  ["close"]: "Envelope-close",
+};
 
 const Envelope = ({ letter }) => {
   return (
     <div className="Envelope-Container">
-      <img className="Envelope" src={IMG[letter.is_open]}></img>
-      <div className="Envelope-Text">{letter.sender_id}</div>
+      <img className={envelopeClass[letter.is_open]} src={IMG[letter.is_open]}></img>
+      <p className="Envelope-Text">{letter.sender_id}</p>
     </div>
   );
 };

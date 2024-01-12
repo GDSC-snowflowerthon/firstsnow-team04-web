@@ -1,16 +1,28 @@
 .Envelope-Container {
   width: 128px;
-  height: 128px;
+  height: auto;
   text-align: center;
+  
 }
 
-.Envelope {
+.Envelope-open {
+  width:110px;
   margin-bottom: 8px;
-  margin-top: 8px;
+  margin-top: 20px;
+}
+.Envelope-close {
+  width:110px;
+  margin-bottom: 8px;
+  margin-top: 30px;
 }
 
 .Envelope-Text {
   font-size: 16px;
   font-family: 'Pretendard';
   color:white;
+  margin:0;
+  
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
