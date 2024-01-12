@@ -1,4 +1,4 @@
-import Switch from "@mui/material/Switch";
+// import Switch from "@mui/material/Switch";
 import userIcon from "../assets/change-user.svg";
 import "./Setting.css";
 import { useState } from "react";
@@ -13,12 +13,12 @@ const SettingToggle = ({ init }) => {
       <img src={userIcon} className="Setting-Icon"></img>
       <div className="Setting-Wrapper">
         <div className="Setting-Text">{SETTING[toggle]}</div>
-        <Switch
+        {/* <Switch
           checked={toggle}
           onChange={(e) => {
             setToggle(Number(!toggle));
           }}
-        ></Switch>
+        ></Switch> */}
       </div>
     </div>
   );
