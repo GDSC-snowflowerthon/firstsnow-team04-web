@@ -2,6 +2,7 @@ import "./SettingPage.css";
 
 import fog from "../../assets/fog.svg";
 import SettingHeader from "../../components/SettingHeader";
+
 import SearchNickName from "../../components/SearchNickname";
 import Setting from "../../components/Setting";
 import SettingToggle from "../../components/SettingToggle";

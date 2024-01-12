@@ -5,7 +5,7 @@ function TitleMailbox({ userName }){
     return (
     <div className="App-title-mailbox">
         <img src={iconDirection} alt="back button Image" className='App-title-mailbox-back'/>
-        <p className="App-title-mailbox-text-bold">00님</p>
+        <p className="App-title-mailbox-text-bold">{userName}님</p>
         <p className="App-title-mailbox-text">의 우편함</p>
     </div>
     );

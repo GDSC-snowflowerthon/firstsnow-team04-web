@@ -12,6 +12,8 @@ import IndexPage from "./pages/IndexPages/IndexPage";
 import LoginPage from "./pages/IndexPages/LoginPage";
 
 function App() {
+  const main = "이 편지는 영국에서 처음 시작되어 어쩌구 저쩌구 얄리얄리 얄라쑝\n 우리팀 파이팅! 나는 원래 당첨같은거 잘 안걸리는데 오늘 1번으로 럭키드로우 당첨됐으니 아주 운이 좋다 말할수 있습니다.";
+
   return (
     <BrowserRouter>
       <Routes>

@@ -130,3 +130,10 @@
   font-weight: 500;
   src: url("./font/Pretendard-Bold.otf") format("truetype");
 }
+
+@font-face {
+  font-family: 'Yoonwoo';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105@1.1/Yoonwoo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
