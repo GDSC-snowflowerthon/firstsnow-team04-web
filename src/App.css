@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,22 @@
   to {
     transform: rotate(360deg);
   }
+} */
+.App-bg-non{
+  background-color: #21222D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-bg {
+  background: var(--background, linear-gradient(180deg, #001847 30%, #122F95 100%));
+  width: 480px;
+  height: 932px;
+}
+
+.App-bg-fog {
+  width: 100%;
+  height: auto;
+  margin-top: 185px;
 }

@@ -1,0 +1,13 @@
+.App-main-header{
+    width : 100%;
+    display: flex;
+}
+
+.App-main-header-setting{
+    width : 30px;
+    height: auto;
+    margin-top: 20px;
+    margin-right : 20px;
+    margin-bottom: 11px;
+    margin-left: auto;
+}
