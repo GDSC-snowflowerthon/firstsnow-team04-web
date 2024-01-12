@@ -23,15 +23,17 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<IndexPage></IndexPage>}></Route>
-        <Route path="/main" element={<MyPage></MyPage>}></Route>
+        <Route path="/main"></Route>
+        <Route path="/main/:userid" element={<MyPage></MyPage>}></Route>
         <Route path="/friend" element={<FriendPage></FriendPage>}></Route>
-
+        <Route path="/writeMail"></Route>
         <Route
-          path="/writeMail"
+          path="/writeMail/:userid"
           element={<WriteMailPage></WriteMailPage>}
         ></Route>
+        <Route path="/mailboxList"></Route>
         <Route
-          path="/mailboxList"
+          path="/mailboxList/:userid"
           element={<MailboxPage></MailboxPage>}
         ></Route>
         <Route path="/" element={<IndexPage></IndexPage>}></Route>

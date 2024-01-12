@@ -11,10 +11,17 @@ const envelopeClass = {
   ["close"]: "Envelope-close",
 };
 
+const handleLetter = async () => {
+  await fetch("./api/v1/letter/");
+};
+
 const Envelope = ({ letter }) => {
   return (
-    <div className="Envelope-Container">
-      <img className={envelopeClass[letter.is_open]} src={IMG[letter.is_open]}></img>
+    <div className="Envelope-Container" onClick={handleLetter}>
+      <img
+        className={envelopeClass[letter.is_open]}
+        src={IMG[letter.is_open]}
+      ></img>
       <p className="Envelope-Text">{letter.sender_id}</p>
     </div>
   );
