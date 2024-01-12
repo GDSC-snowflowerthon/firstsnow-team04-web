@@ -20,7 +20,7 @@ const SettingPage = () => {
             <SearchNickName></SearchNickName>
             <Setting setting="name"></Setting>
             <Setting setting="location"></Setting>
-            <SettingToggle init={1}></SettingToggle>
+            <SettingToggle init={0}></SettingToggle>
             <Setting setting="snowman"></Setting>
             <Setting setting="logout"></Setting>
           </div>
