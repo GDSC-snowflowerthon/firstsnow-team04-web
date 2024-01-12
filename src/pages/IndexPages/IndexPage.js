@@ -30,6 +30,7 @@ const IndexPage = () => {
           <SnowFloor />
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
           <div className="main-container">
+            
             <Link to="/login" className="Index-Login">
               <Button color="dark" text="로그인"></Button>
             </Link>
