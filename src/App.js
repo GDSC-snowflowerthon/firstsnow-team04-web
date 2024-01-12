@@ -8,7 +8,6 @@ import snowbg3 from './assets/snow-bg-3.svg';
 import SnowFloor from './components/SnowFloor';
 
 
-
 function App() {
   return (
     <div className='App-bg-non'>
@@ -27,6 +26,7 @@ function App() {
 
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
           <div className='main-container'>
+
           </div>
         </div>
       </div>

@@ -112,5 +112,31 @@
 .main-container {
   position: absolute;
   top: 0; /* Align to the top */
-  right: 0; /* Align to the right */
+  /* right: 0; Align to the right */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 아래는 폰트!! */
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  src: url("./font/Pretendard-Thin.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  font-weight: 500;
+  src: url("./font/Pretendard-Bold.otf") format("truetype");
 }
