@@ -1,6 +1,6 @@
 .App-letter-container{
     width: 388px;
-    height: 500px;
+    height: auto;
     background-color: white;
     margin-left: 25px;
     margin-right: 25px;
@@ -47,13 +47,13 @@
 
 .App-letter-input{
     width: 90%;
-    height: 60%;
+    height: 350px;
     white-space: pre-line;
     vertical-align: top;
 
     border-radius:40px;
     border: 3px dashed #000;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: black;
     font-family: 'Yoonwoo';
     font-size: 28px;

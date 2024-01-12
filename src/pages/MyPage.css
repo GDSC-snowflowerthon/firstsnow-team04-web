@@ -1,7 +1,7 @@
 .Button {
   position: absolute;
   left: 50%;
-  bottom: 24px;
+  bottom: 36px;
   text-align: center;
   transform: translate(-50%, 0%);
 }

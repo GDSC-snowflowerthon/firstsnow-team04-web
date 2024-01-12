@@ -2,9 +2,14 @@
     width: 100%;
     display: flex;
     justify-content:center;
+    position:absolute;
+    bottom: 0;
+    margin-bottom: 180px;
 }
 .App-MailboxNSnowman-mail{
     margin-right: 7px;
+    align-items: end;
+    justify-self: end;
 }
 .App-MailboxNSnowman-snowman{
     margin-left: 8px;

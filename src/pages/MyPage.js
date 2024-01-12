@@ -1,15 +1,21 @@
 import MainHeader from "../components/MainHeader";
-import TitleMain from "../components/TitleMain";
+import TitleMainMy from "../components/TitleMainMy";
 import Button from "../components/Button";
 import "./MyPage.css";
+import "../App.css";
 
 import fog from "../assets/fog.svg";
 import snowbg1 from "../assets/snow-bg-1.svg";
 import snowbg2 from "../assets/snow-bg-2.svg";
 import snowbg3 from "../assets/snow-bg-3.svg";
 import SnowFloor from "../components/SnowFloor";
+import MailboxNSnowman from "../components/MailboxNSnowman";
 
 const MyPage = () => {
+  const name = "이혁"; //username
+  const mailopen = true;
+  const snowmantype = 2;
+
   return (
     <div className="App-bg-non">
       {/* 배경색상 + 안개 + 하늘 눈 + 바닥 눈 ++ 페이지 내용*/}
@@ -31,10 +37,10 @@ const MyPage = () => {
 
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
           <div className="main-container">
-            <MainHeader></MainHeader>
-            <TitleMain name="이혁"></TitleMain>
-            {/* 우편함 눈사람 들어올 위치 */}
-            <Button color="dark" text="링크 공유"></Button>
+            <MainHeader />
+            <TitleMainMy userName={name} mailboxOpen={mailopen}></TitleMainMy>
+            <MailboxNSnowman mailboxOpen={mailopen} snowmantype={snowmantype}/>
+            <Button className="MyPage-Button" color="dark" text="링크 공유"></Button>
           </div>
         </div>
       </div>

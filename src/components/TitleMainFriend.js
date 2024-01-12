@@ -1,6 +1,7 @@
 import React from "react";
+import "./Header.css";
 
-function TitleMain({userName}){
+function TitleMainFriend({userName}){
     return (
         <div className="App-title-main">
             <div className="App-title-main-name-container">
@@ -11,4 +12,4 @@ function TitleMain({userName}){
         </div>
     );
 }
-export default TitleMain;
+export default TitleMainFriend;

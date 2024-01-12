@@ -52,6 +52,26 @@
     font-size: 26px;
 }
 
+.App-title-mailbox-write{
+    width : 100%;
+    display: flex;
+    margin: 80px 0 50px 0;
+    padding-left: 30px;
+}
+.App-title-mailbox-write-text-bold{
+    color: white;
+    font-family: 'Pretendard-Bold';
+    font-size: 26px;
+    margin: 0;
+}
+
+.App-title-mailbox-write-text{
+    color: white;
+    font-family: 'Pretendard';
+    font-size: 26px;
+    margin: 0;
+}
+
 .App-title-main{
     margin-left: 20px;
     margin-bottom: 20px;
@@ -60,6 +80,7 @@
 .App-title-main-name-container{
     display: flex;
 }
+
 
 .App-title-main-text-bold{
     color: white;

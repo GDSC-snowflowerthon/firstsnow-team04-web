@@ -1,0 +1,7 @@
+.writeMailPage-Button {
+    position: absolute;
+    left: 50%;
+    bottom: 110px;
+    text-align: center;
+    transform: translate(-50%, 0%);
+}
