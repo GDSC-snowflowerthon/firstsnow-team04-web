@@ -1,0 +1,25 @@
+.Setting-Container {
+  background-color: #000000;
+  display: flex;
+  width: 327px;
+  height: 36px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+
+  align-items: center;
+}
+
+.Setting-Wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 281px;
+}
+
+.Setting-Icon {
+  margin-right: 16px;
+}
+
+.Setting-Text {
+  color: #ffffff;
+}

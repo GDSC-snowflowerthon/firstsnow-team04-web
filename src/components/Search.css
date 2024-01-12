@@ -1,0 +1,44 @@
+input {
+  all: unset;
+}
+
+.SearchItem-Container {
+  width: 263px;
+  height: 48px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 16px 32px 16px 32px;
+  border-radius: 32px;
+  /* 위치가 피그마랑 약간 다르긴 하지만 보기에 이상하지는 않은듯 */
+}
+
+.SearchItem-Name {
+  font-size: 20px;
+}
+
+.SearchItem-Email {
+  font-size: 16px;
+}
+
+.Search-Container {
+  width: 295px;
+  height: 24px;
+  border-radius: 24px;
+  background-color: #ffffff;
+  display: flex;
+  padding: 16px;
+}
+
+.Search-Icon {
+  margin-right: 12px;
+}
+
+.Search-Input {
+  border: none;
+  font-size: 20px;
+  background-color: #ffffff;
+}
+
+input::placeholder.Search-Input {
+  color: #000000;
+}
