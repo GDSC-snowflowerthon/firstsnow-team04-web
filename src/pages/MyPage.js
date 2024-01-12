@@ -10,11 +10,34 @@ import snowbg2 from "../assets/snow-bg-2.svg";
 import snowbg3 from "../assets/snow-bg-3.svg";
 import SnowFloor from "../components/SnowFloor";
 import MailboxNSnowman from "../components/MailboxNSnowman";
+import { useState } from "react";
+import { useParams, Link } from "react-router-dom";
+
+const userapi = async (name) => {
+  const [user, setUser] = useState({
+    name: "",
+  });
+  const request = { nickname: name };
+  await fetch("./api/v1/user/login", {
+    method: "POST",
+    body: JSON.stringify(request),
+  })
+    .then((response) => {
+      response.json();
+    })
+    .then((result) => {});
+};
 
 const MyPage = () => {
-  const name = "이혁"; //username
-  const mailopen = true;
-  const snowmantype = 2;
+  const id = useParams().userid;
+
+  const name = [
+    0,
+    "동국대 리드",
+    "숭실대 리드",
+    "이화여대 리드",
+    "홍익대 리드",
+  ][id - 4];
 
   return (
     <div className="App-bg-non">
@@ -38,9 +61,16 @@ const MyPage = () => {
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
           <div className="main-container">
             <MainHeader />
-            <TitleMainMy userName={name} mailboxOpen={mailopen}></TitleMainMy>
-            <MailboxNSnowman mailboxOpen={mailopen} snowmantype={snowmantype}/>
-            <Button className="MyPage-Button" color="dark" text="링크 공유"></Button>
+            <TitleMainMy userName={name} mailboxOpen={true}></TitleMainMy>
+            <Link to={`/mailboxList/${id}`}></Link>
+            <MailboxNSnowman mailboxOpen={true} snowmantype={id} />
+            <Link to={`/writeMail/${id}`}>
+              <Button
+                className="MyPage-Button"
+                color="dark"
+                text="편지 작성하기"
+              ></Button>
+            </Link>
           </div>
         </div>
       </div>
