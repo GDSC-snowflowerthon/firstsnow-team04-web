@@ -1,0 +1,47 @@
+.App-title-mailbox{
+    width : 100%;
+    display: flex;
+}
+
+.App-title-mailbox-back{
+    width : 20px;
+    height: auto;
+    margin-top: 30px;
+    margin-left : 20px;
+    margin-bottom: 34px;
+    margin-right: 20px;
+}
+
+.App-title-mailbox-text-bold{
+    color: white;
+    font-family: 'Pretendard-Bold';
+    font-size: 26px;
+    margin : 30px 0;
+}
+
+.App-title-mailbox-text{
+    color: white;
+    font-family: 'Pretendard';
+    font-size: 26px;
+    margin : 30px 0;
+}
+
+.App-title-mailbox-write{
+    width : 100%;
+    display: flex;
+    margin: 80px 0 50px 0;
+    padding-left: 30px;
+}
+.App-title-mailbox-write-text-bold{
+    color: white;
+    font-family: 'Pretendard-Bold';
+    font-size: 26px;
+    margin: 0;
+}
+
+.App-title-mailbox-write-text{
+    color: white;
+    font-family: 'Pretendard';
+    font-size: 26px;
+    margin: 0;
+}

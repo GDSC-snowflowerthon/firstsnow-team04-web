@@ -27,6 +27,7 @@ function App() {
         <Route path="/main/:userid" element={<MyPage></MyPage>}></Route>
         <Route path="/friend" element={<FriendPage></FriendPage>}></Route>
         <Route path="/writeMail"></Route>
+        <Route path="/MailPage" element={<MailPage></MailPage>}></Route>
         <Route
           path="/writeMail/:userid"
           element={<WriteMailPage></WriteMailPage>}
