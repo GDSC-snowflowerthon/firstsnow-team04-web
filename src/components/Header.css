@@ -32,9 +32,9 @@
 }
 
 .App-title-mailbox-back{
-    width : 24px;
+    width : 20px;
     height: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-left : 20px;
     margin-bottom: 34px;
     margin-right: 20px;
@@ -44,12 +44,14 @@
     color: white;
     font-family: 'Pretendard-Bold';
     font-size: 26px;
+    margin : 30px 0;
 }
 
 .App-title-mailbox-text{
     color: white;
     font-family: 'Pretendard';
     font-size: 26px;
+    margin : 30px 0;
 }
 
 .App-title-mailbox-write{
