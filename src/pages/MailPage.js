@@ -3,6 +3,9 @@ import "./MailPage.css";
 import TitleMailbox from "../components/TitleMailbox";
 import LetterView from '../components/LetterView';
 import PageNumber from '../components/PageNumber';
+import iconDirectionLeft from '../assets/direction-left.svg';
+import iconDirectionRight from '../assets/direction-right.svg';
+import iconDirection from '../assets/direction-left.svg';
 
 import fog from "../assets/fog.svg";
 
@@ -23,10 +26,22 @@ const MailPage = () => {
 
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
           <div className="main-container">
-            <TitleMailbox userName={name} />
+            {/* <TitleMailbox userName={name} /> */}
+            <div className="App-title-mailbox">
+              <img src={iconDirection} alt="back button Image" className='App-title-mailbox-back'/>
+              <p className="App-title-mailbox-text-bold">{name}님</p>
+              <p className="App-title-mailbox-text">의 우편함</p>
+            </div>
             {/* <LetterWrite date={date} textTo={friendName} textFrom={name}/> */}
             <LetterView date={date} textTo={friendName} textDetail={text} textFrom={name} />
-            <PageNumber nowPage={nowPage} totalPage={totalPage}/>
+            {/* <PageNumber nowPage={nowPage} totalPage={totalPage}/> */}
+            {/* <div className="App-Page-Number-container">
+                <img src={iconDirectionLeft} alt="left dir Image" className='App-Page-Number-direction-left'/>
+                <p className="App-Page-Number-text"> { nowPage } </p>
+                <p className="App-Page-Number-text"> / </p>
+                <p className="App-Page-Number-text"> {totalPage} </p>
+                <img src={iconDirectionRight} alt="right dir Image" className='App-Page-Number-direction-right'/>
+            </div> */}
           </div>
         </div>
       </div>
