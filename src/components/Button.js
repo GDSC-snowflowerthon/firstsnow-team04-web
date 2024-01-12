@@ -1,12 +1,18 @@
-const Button = ({ color, text }) => {
+import "./Button.css";
+
+const Button = ({ color, text, func }) => {
   return (
-    <div>
+    <div className="Button">
       {color === "dark" ? (
         /*ButtonDark*/
-        <div className="ButtonDark">{text}</div>
+        <button className="ButtonDark" onClick={func}>
+          {text}
+        </button>
       ) : (
         /*ButtonWhite*/
-        <div className="ButtonWhite">{text}</div>
+        <button className="ButtonWhite" onClick={func}>
+          {text}
+        </button>
       )}
     </div>
   );
