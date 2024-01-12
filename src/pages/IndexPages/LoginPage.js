@@ -47,7 +47,7 @@ const LoginPage = () => {
 
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
           <div className="main-container">
-            <SignupQuestion name="닉네임"></SignupQuestion>
+            <SignupQuestion userName="닉네임"></SignupQuestion>
             <Input value={loginInput} text="닉네임" func={handleLogin}></Input>
             <Button
               value={loginInput}
