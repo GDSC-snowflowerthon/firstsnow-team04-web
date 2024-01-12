@@ -1,5 +1,5 @@
 .Setting-Container {
-  background-color: #000000;
+  background-color: none;
   display: flex;
   width: 327px;
   height: 36px;
@@ -7,6 +7,10 @@
   margin-bottom: 12px;
 
   align-items: center;
+}
+
+.Setting-Container:hover {
+  cursor: pointer;
 }
 
 .Setting-Wrapper {
