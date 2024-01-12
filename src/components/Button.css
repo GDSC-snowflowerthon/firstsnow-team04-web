@@ -1,3 +1,8 @@
+button {
+  all: unset;
+  text-align: center;
+}
+
 .ButtonDark {
   width: 327px;
   height: 64px;
