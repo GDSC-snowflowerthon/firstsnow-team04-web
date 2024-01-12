@@ -1,4 +1,4 @@
-const Button = () => {
+const ButtonNameCheck = () => {
   return (
     <div>
       <button></button>
@@ -6,4 +6,4 @@ const Button = () => {
   );
 };
 
-export default Button;
+export default ButtonNameCheck;
