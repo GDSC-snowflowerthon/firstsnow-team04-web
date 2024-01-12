@@ -19,11 +19,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route path="/" element={<IndexPage></IndexPage>}></Route>
+        <Route path="/main" element={<MyPage></MyPage>}></Route>
         <Route path="/friend" element={<FriendPage></FriendPage>}></Route>
         <Route path="/writeMail" element={<WriteMailPage></WriteMailPage>}></Route>
         <Route path="/mailboxList" element={<MailboxPage></MailboxPage>}></Route>
-        <Route path="/" element={<IndexPage></IndexPage>}></Route>
-        <Route path="/main" element={<MyPage></MyPage>}></Route>
+        
         <Route path="/setting">
           <Route index element={<SettingPage></SettingPage>}></Route>
           <Route
