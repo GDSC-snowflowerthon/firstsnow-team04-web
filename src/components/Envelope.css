@@ -1,0 +1,14 @@
+.Envelope-Container {
+  width: 128px;
+  height: 128px;
+  text-align: center;
+}
+
+.Envelope {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.Envelope-Text {
+  font-size: 16px;
+}
