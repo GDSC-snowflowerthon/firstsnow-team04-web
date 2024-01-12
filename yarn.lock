@@ -5035,7 +5035,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"confusing-browser-globals@npm:^1.0.11":
+"confusing-browser-globals@npm:^1.0.10, confusing-browser-globals@npm:^1.0.11":
   version: 1.0.11
   resolution: "confusing-browser-globals@npm:1.0.11"
   checksum: 475d0a284fa964a5182b519af5738b5b64bf7e413cfd703c1b3496bf6f4df9f827893a9b221c0ea5873c1476835beb1e0df569ba643eff0734010c1eb780589e
@@ -6177,6 +6177,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-config-react-app@npm:6":
+  version: 6.0.0
+  resolution: "eslint-config-react-app@npm:6.0.0"
+  dependencies:
+    confusing-browser-globals: "npm:^1.0.10"
+  peerDependencies:
+    "@typescript-eslint/eslint-plugin": ^4.0.0
+    "@typescript-eslint/parser": ^4.0.0
+    babel-eslint: ^10.0.0
+    eslint: ^7.5.0
+    eslint-plugin-flowtype: ^5.2.0
+    eslint-plugin-import: ^2.22.0
+    eslint-plugin-jest: ^24.0.0
+    eslint-plugin-jsx-a11y: ^6.3.1
+    eslint-plugin-react: ^7.20.3
+    eslint-plugin-react-hooks: ^4.0.8
+    eslint-plugin-testing-library: ^3.9.0
+  peerDependenciesMeta:
+    eslint-plugin-jest:
+      optional: true
+    eslint-plugin-testing-library:
+      optional: true
+  checksum: 3141500eb3b7a1edfbade684cd07cb0199d60c7f432021842932e0c935285ae94b198f6cdc344c4f7ac7b7a1690bb4312c0b2ee4ca28a523d570df768ee177bf
+  languageName: node
+  linkType: hard
+
 "eslint-config-react-app@npm:^7.0.1":
   version: 7.0.1
   resolution: "eslint-config-react-app@npm:7.0.1"
@@ -6824,6 +6850,7 @@ __metadata:
     "@testing-library/jest-dom": "npm:^5.14.1"
     "@testing-library/react": "npm:^13.0.0"
     "@testing-library/user-event": "npm:^13.2.1"
+    eslint-config-react-app: "npm:6"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     react-router-dom: "npm:^6.21.1"
