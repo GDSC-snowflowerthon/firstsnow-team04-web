@@ -17,7 +17,7 @@ const MailboxPage = () => {
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
           <div className="main-container">
             <TitleMailbox userName={name} />
-            <div className="">
+            <div className="Envelope-3-container">
               <Envelope letter={{ is_open: "close", sender_id: "test" }} />
               <Envelope letter={{ is_open: "open", sender_id: "test" }} />
               <Envelope letter={{ is_open: "close", sender_id: "test" }} />
