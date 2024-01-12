@@ -31,13 +31,12 @@ function App() {
           path="/writeMail/:userid"
           element={<WriteMailPage></WriteMailPage>}
         ></Route>
-        <Route path="/mailboxList"></Route>
+        <Route path="/mailboxpage"></Route>
         <Route
-          path="/mailboxList/:userid"
+          path="/mailboxpage/:userid"
           element={<MailboxPage></MailboxPage>}
         ></Route>
-        <Route path="/" element={<IndexPage></IndexPage>}></Route>
-        <Route path="/main" element={<MyPage></MyPage>}></Route>
+
         <Route
           path="/signup/name"
           element={<SignupNamePage></SignupNamePage>}
