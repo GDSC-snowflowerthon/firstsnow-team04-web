@@ -19,7 +19,7 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     const request = { nickname: e.target.value };
     console.log(request);
-    navigate("/main");
+    // navigate("/main");
     await fetch("/api/v1/user/login", {
       method: "POST",
       body: JSON.stringify(request),
@@ -28,8 +28,9 @@ const LoginPage = () => {
       .then((result) => {
         if (result["success"] == true) {
           const DATA = result["data"];
+          console.log(DATA);
           localStorage.setItem("data", JSON.stringify(DATA));
-          navigate(`/main/${DATA["user_id"]}`);
+          navigate(`/main`);
         } else {
           console.log(result["error"]["code"]);
           console.log(result["error"]["message"]);
