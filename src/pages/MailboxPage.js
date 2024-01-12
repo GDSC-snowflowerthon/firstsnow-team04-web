@@ -3,9 +3,17 @@ import "./MailboxPage.css";
 import fog from "../assets/fog.svg";
 import TitleMailbox from "../components/TitleMailbox";
 import Envelope from "../components/Envelope";
+import { Link } from "react-router-dom";
 
 const MailboxPage = () => {
-  const name = "이혁"; //user name
+  const id = useParams().userid;
+  const name = [
+    0,
+    "동국대 리드",
+    "숭실대 리드",
+    "이화여대 리드",
+    "홍익대 리드",
+  ][id - 4];
 
   return (
     <div className="App-bg-non">
@@ -23,7 +31,9 @@ const MailboxPage = () => {
               <Envelope letter={{ is_open: "close", sender_id: "혁오" }} />
             </div>
             <div className="Envelope-3-container">
-              <Envelope letter={{ is_open: "open", sender_id: "이혁삼혁사혁오혁육혁" }} />
+              <Envelope
+                letter={{ is_open: "open", sender_id: "이혁삼혁사혁오혁육혁" }}
+              />
               <Envelope letter={{ is_open: "open", sender_id: "구연" }} />
               <Envelope letter={{ is_open: "close", sender_id: "강산아" }} />
             </div>
