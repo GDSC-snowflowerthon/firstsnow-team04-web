@@ -54,3 +54,89 @@
   height: auto;
   margin-top: 185px;
 }
+.App-bg-snow {
+  width: 100%;
+  height: auto;
+  margin-top: 116px;
+  animation: moveUpDown 2s infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+.App-bg-snow-floor-container {
+  width: 100%;
+  margin-top: 284px;
+}
+.App-bg-snow-floor-top{
+  width: 420px;
+  height: 10px;
+  margin-right: 27px;
+  margin-left: 33px;
+  align-items: center;
+  background-color: white;
+}
+.App-bg-snow-floor-middle{
+  width: 460px;
+  height: 14px;
+  margin-left: 20px;
+  background-color: white;
+}
+.App-bg-snow-floor-bottom{
+  width: 480px;
+  height: 200px;
+  background-color: white;
+}
+
+
+.overlap-container {
+  position: relative;
+}
+
+.snow-bg-container {
+  position: absolute;
+  top: 0; /* Align to the top */
+  align-items: center;
+}
+
+.main-container {
+  position: absolute;
+  top: 0; /* Align to the top */
+  /* right: 0; Align to the right */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 아래는 폰트!! */
+@font-face {
+  font-family: "Pretendard";
+  font-weight: 100;
+  src: url("./font/Pretendard-Thin.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "Pretendard-Bold";
+  font-weight: 500;
+  src: url("./font/Pretendard-Bold.otf") format("truetype");
+}

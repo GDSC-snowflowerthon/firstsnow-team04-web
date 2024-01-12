@@ -9,5 +9,139 @@
     margin-top: 20px;
     margin-right : 20px;
     margin-bottom: 11px;
-    margin-left: auto;
+    margin-left: 428px;
+}
+
+.App-back-header{
+    width : 100%;
+    display: flex;
+}
+
+.App-back-header-setting{
+    width : 24px;
+    height: auto;
+    margin-top: 20px;
+    margin-left : 20px;
+    margin-bottom: 11px;
+    margin-right: 20px;
+}
+
+.App-title-mailbox{
+    width : 100%;
+    display: flex;
+}
+
+.App-title-mailbox-back{
+    width : 24px;
+    height: auto;
+    margin-top: 20px;
+    margin-left : 20px;
+    margin-bottom: 34px;
+    margin-right: 20px;
+}
+
+.App-title-mailbox-text-bold{
+    color: white;
+    font-family: 'Pretendard-Bold';
+    font-size: 26px;
+}
+
+.App-title-mailbox-text{
+    color: white;
+    font-family: 'Pretendard';
+    font-size: 26px;
+}
+
+.App-title-main{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.App-title-main-name-container{
+    display: flex;
+}
+
+.App-title-main-text-bold{
+    color: white;
+    font-family: 'Pretendard-Bold';
+    font-size: 26px;
+    margin: 0;
+}
+
+.App-title-main-text{
+    color: white;
+    font-family: 'Pretendard';
+    font-size: 26px;
+    margin: 0;
+}
+
+.App-signup-question-container{
+    margin-top: 143px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.App-signup-question-text-bold{
+    color: white;
+    font-family: 'Pretendard-Bold';
+    font-size: 26px;
+    margin: 0;
+}
+
+.App-signup-question-text{
+    color: white;
+    font-family: 'Pretendard';
+    font-size: 26px;
+    margin: 0;
+}
+
+.App-Setting-Header-container{
+    margin-top: 17px;
+    margin-left: 33px;
+    margin-bottom: 17px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between; /* Add this line */
+    align-items: center;
+}
+.App-Setting-Header-username{
+    color: white;
+    font-family: 'Pretendard-Bold';
+    text-decoration: underline;
+    font-size: 26px;
+    margin: 0;
+}
+.App-Setting-Header-cancle{
+    width : 24px;
+    height: auto;
+    margin:0;
+}
+
+
+.App-Page-Number-container{
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.App-Page-Number-text{
+    color: white;
+    font-family: 'Pretendard';
+    font-size: 26px;
+    margin-left: 3px;
+    margin-right:3px;
+    margin-top: 0;
+    margin-bottom: 0;
+
+}
+.App-Page-Number-direction-left{
+    width : 16px;
+    height: auto;
+    margin-right: 17px;
+}
+.App-Page-Number-direction-right{
+    width : 16px;
+    height: auto;
+    margin-left: 17px;
 }
