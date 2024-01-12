@@ -7,7 +7,7 @@ import snowbg2 from "../../assets/snow-bg-2.svg";
 import snowbg3 from "../../assets/snow-bg-3.svg";
 import SnowFloor from "../../components/SnowFloor2";
 import Button from "../../components/Button";
-import MailboxNSnowman from "../../components/MailboxNSnowman2";
+import MailboxNSnowman2 from "../../components/MailboxNSnowman2";
 
 import { Link } from "react-router-dom";
 
@@ -32,9 +32,10 @@ const IndexPage = () => {
 
           {/* 바닥 눈*/}
           <SnowFloor />
+
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
           <div className="main-container">
-            <MailboxNSnowman mailboxOpen={mailopen} snowmantype={snowmantype}/>
+            <MailboxNSnowman2 mailboxOpen={mailopen} snowmantype={snowmantype}/>
             <Link to="/writeMail/8" className="Index-1">
               <Button color="dark" text="홍익대"></Button>
             </Link>

@@ -53,7 +53,12 @@ const MailboxPage = () => {
 
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
           <div className="main-container">
-            <TitleMailbox userName={name} />
+            {/* <TitleMailbox userName={name} /> */}
+            <div className="App-title-mailbox">
+              {/* <img src={iconDirection} alt="back button Image" className='App-title-mailbox-back'/> */}
+              <p className="App-title-mailbox-text-bold">{name}님</p>
+              <p className="App-title-mailbox-text">의 우편함</p>
+            </div>
             <div style={{ height: "700px", overflowY: "scroll" }} ref={divRef}>
             {envelopeData.reduce((rows, envelope, index) => {
               if (index % 3 === 0) rows.push([]);

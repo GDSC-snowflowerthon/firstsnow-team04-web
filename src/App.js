@@ -25,7 +25,8 @@ function App() {
         <Route path="/" element={<IndexPage></IndexPage>}></Route>
         <Route path="/main"></Route>
         <Route path="/main/:userid" element={<MyPage></MyPage>}></Route>
-        <Route path="/friend" element={<FriendPage></FriendPage>}></Route>
+        <Route path="/friend"></Route>
+        <Route path="/friend/:userid" element={<FriendPage></FriendPage>}></Route>
         <Route path="/writeMail"></Route>
         <Route path="/MailPage" element={<MailPage></MailPage>}></Route>
         <Route
