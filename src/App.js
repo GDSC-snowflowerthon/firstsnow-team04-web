@@ -3,7 +3,7 @@ import "./components/Header.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import MyPage from "./pages/MyPage";
-import SettingPage from "./pages/SettingPages/SearchPage";
+import SettingPage from "./pages/SettingPages/SettingPage";
 import SearchPage from "./pages/SettingPages/SearchPage";
 import ChangeSnowmanPage from "./pages/SettingPages/ChangeSnowmanPage";
 import ChangeNamePage from "./pages/SettingPages/ChangeNamePage";
