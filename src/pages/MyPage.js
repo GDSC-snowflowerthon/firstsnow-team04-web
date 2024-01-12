@@ -11,33 +11,19 @@ import snowbg3 from "../assets/snow-bg-3.svg";
 import SnowFloor from "../components/SnowFloor";
 import MailboxNSnowman from "../components/MailboxNSnowman";
 import { useState } from "react";
-import { useParams, Link } from "react-router-dom";
-
-const userapi = async (name) => {
-  const [user, setUser] = useState({
-    name: "",
-  });
-  const request = { nickname: name };
-  await fetch("./api/v1/user/login", {
-    method: "POST",
-    body: JSON.stringify(request),
-  })
-    .then((response) => {
-      response.json();
-    })
-    .then((result) => {});
-};
+import { useParams, Link, useNavigate } from "react-router-dom";
 
 const MyPage = () => {
   const id = useParams().userid;
+  const navigate = useNavigate();
 
-  const name = [
-    0,
-    "동국대 리드",
-    "숭실대 리드",
-    "이화여대 리드",
-    "홍익대 리드",
-  ][id - 4];
+  const name = ["서희찬", "고광서", "김현아", "김유진"][id - 5];
+  const token = [
+    "eyJKV1QiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6NSwiaWF0IjoxNzA1MTAwNzY5LCJleHAiOjE3MDUxMTA3Njl9.4yEndEqrHIFBqKtDx_4Zqhqfe6cDpHp5ZQHm2kKA1CHf4S2CogE7KlVyxmsuuQgrbc3hfGRZssWOdrcgcRFMxw",
+    "eyJKV1QiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6NiwiaWF0IjoxNzA1MTAwODA2LCJleHAiOjE3MDUxMTA4MDZ9.otHFYWm8BXzajFi7_HvABW6ZHwsg212WfAaxVE_Q4FN5VcI3SAEE8LkYTFbid9MQgosuVRHKzBfOtnPkxR2rqg",
+    "eyJKV1QiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6NywiaWF0IjoxNzA1MTAwODI0LCJleHAiOjE3MDUxMTA4MjR9.E8KiiU07Genkq_II3bR4v9QzgQsQoB0jlTDOR4osb0T9HifsQKXslnxUhRBrz-5xMjMFpMVRw6vAN7VORDhsIA",
+    "eyJKV1QiOiJKV1QiLCJhbGciOiJIUzUxMiJ9.eyJpZCI6OCwiaWF0IjoxNzA1MTAwODMyLCJleHAiOjE3MDUxMTA4MzJ9.a7F0a2QOtBBJwt8_DRTKR9gVoAIqwO8w2Ma0FK3oQe54sHMlZKaNMBGT5TveWFdIcm99s3MROAkibLYKamVGFA",
+  ][id - 5];
 
   return (
     <div className="App-bg-non">
@@ -62,8 +48,10 @@ const MyPage = () => {
           <div className="main-container">
             <MainHeader />
             <TitleMainMy userName={name} mailboxOpen={true}></TitleMainMy>
-            <Link to={`/mailboxList/${id}`}></Link>
-            <MailboxNSnowman mailboxOpen={true} snowmantype={id} />
+            <Link to={`/mailboxpage/${id}`}>
+              <MailboxNSnowman mailboxOpen={true} snowmantype={id} />
+            </Link>
+
             <Link to={`/writeMail/${id}`}>
               <Button
                 className="MyPage-Button"
