@@ -1,6 +1,9 @@
 import "./SignupNamePage.css";
 
 import fog from "../../assets/fog.svg";
+import SignupQuestion from "../../components/SignupQuestion";
+import ButtonNameCheck from "../../components/ButtonNameCheck";
+import Button from "../../components/Button";
 
 const SignupNamePage = () => {
   return (
@@ -11,7 +14,11 @@ const SignupNamePage = () => {
           <img src={fog} alt="Fog Image" className="App-bg-fog" />
 
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
-          <div className="main-container"></div>
+          <div className="main-container">
+            <SignupQuestion userName="닉네임"></SignupQuestion>
+            <ButtonNameCheck></ButtonNameCheck>
+            <Button color="white" text="다음"></Button>
+          </div>
         </div>
       </div>
     </div>

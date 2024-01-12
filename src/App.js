@@ -14,7 +14,9 @@ import ChangeLoactionPage from "./pages/SettingPages/ChangeLocationPage";
 import ChangeNamePage from "./pages/SettingPages/ChangeNamePage";
 import IndexPage from "./pages/IndexPages/IndexPage";
 import LoginPage from "./pages/IndexPages/LoginPage";
-
+import SignupLocationPage from "./pages/IndexPages/SignupLocationPage";
+import SignupNamePage from "./pages/IndexPages/SignupNamePage";
+import SignupPhonePage from "./pages/IndexPages/SignupPhonePage";
 
 function App() {
   return (
@@ -23,10 +25,30 @@ function App() {
         <Route path="/" element={<IndexPage></IndexPage>}></Route>
         <Route path="/main" element={<MyPage></MyPage>}></Route>
         <Route path="/friend" element={<FriendPage></FriendPage>}></Route>
-        <Route path="/writeMail" element={<WriteMailPage></WriteMailPage>}></Route>
-        <Route path="/mailboxList" element={<MailboxPage></MailboxPage>}></Route>
-        <Route path="/mailpage" element={<MailPage></MailPage>}></Route>
-        
+
+        <Route
+          path="/writeMail"
+          element={<WriteMailPage></WriteMailPage>}
+        ></Route>
+        <Route
+          path="/mailboxList"
+          element={<MailboxPage></MailboxPage>}
+        ></Route>
+        <Route path="/" element={<IndexPage></IndexPage>}></Route>
+        <Route path="/main" element={<MyPage></MyPage>}></Route>
+        <Route
+          path="/signup/name"
+          element={<SignupNamePage></SignupNamePage>}
+        ></Route>
+        <Route
+          path="/signup/phone"
+          element={<SignupPhonePage></SignupPhonePage>}
+        ></Route>
+        <Route
+          path="/signup/location"
+          element={<SignupLocationPage></SignupLocationPage>}
+        ></Route>
+
         <Route path="/setting">
           <Route index element={<SettingPage></SettingPage>}></Route>
           <Route

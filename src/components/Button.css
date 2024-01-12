@@ -15,7 +15,7 @@ button:hover {
   color: #ffffff;
   font-size: 24px;
   font-weight: bold;
-  font-family: 'Pretendard-Bold';
+  font-family: "Pretendard-Bold";
 }
 
 .ButtonWhite {
@@ -26,7 +26,7 @@ button:hover {
   color: #000000;
   font-size: 24px;
   font-weight: bold;
-  font-family: 'Pretendard-Bold';
+  font-family: "Pretendard-Bold";
 }
 
 .Button {
@@ -41,7 +41,7 @@ button:hover {
   color: #000000;
   font-size: 20px;
   font-weight: bold;
-  font-family: 'Pretendard-Bold';
+  font-family: "Pretendard-Bold";
 }
 
 .Input-Container {
@@ -55,7 +55,7 @@ button:hover {
 
 .Input {
   color: #626262;
-  width: 287px;
+  width: 360px;
   height: 24px;
   border-radius: 24px;
   font-size: 20px;
