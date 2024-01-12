@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
   const [loginInput, setLoginInput] = useState("");
 
   const handleLogin = (e) => {
@@ -18,6 +19,7 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     const request = { nickname: e.target.value };
     console.log(request);
+    navigate("/main");
     await fetch("/api/v1/user/login", {
       method: "POST",
       body: JSON.stringify(request),
@@ -27,7 +29,6 @@ const LoginPage = () => {
         if (result["success"] == true) {
           const DATA = result["data"];
           localStorage.setItem("data", JSON.stringify(DATA));
-          const navigate = useNavigate();
           navigate(`/main/${DATA["user_id"]}`);
         } else {
           console.log(result["error"]["code"]);
