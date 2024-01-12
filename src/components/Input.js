@@ -1,7 +1,14 @@
-const Input = () => {
+import "./Button.css";
+
+const Input = ({ value, text, func }) => {
   return (
     <div>
-      <form></form>
+      <input
+        className="Input"
+        value={value}
+        placeholder={text}
+        onChange={func}
+      ></input>
     </div>
   );
 };
