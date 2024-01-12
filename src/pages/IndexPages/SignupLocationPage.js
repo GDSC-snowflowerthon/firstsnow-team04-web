@@ -1,6 +1,7 @@
 import "./SignupLocationPage.css";
 
 import fog from "../../assets/fog.svg";
+import SignupQuestion from "../../components/SignupQuestion";
 
 const SignupLocationPage = () => {
   return (
@@ -11,7 +12,15 @@ const SignupLocationPage = () => {
           <img src={fog} alt="Fog Image" className="App-bg-fog" />
 
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
-          <div className="main-container"></div>
+          <div className="main-container">
+            <SignupQuestion userName="위치"></SignupQuestion>
+            <Button
+              value={loginInput}
+              color="white"
+              text="완료"
+              onclick={handleSubmit}
+            ></Button>
+          </div>
         </div>
       </div>
     </div>

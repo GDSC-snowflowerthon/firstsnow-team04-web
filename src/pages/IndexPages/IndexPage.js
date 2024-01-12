@@ -33,7 +33,7 @@ const IndexPage = () => {
             <Link to="/login" className="Index-Login">
               <Button color="dark" text="로그인"></Button>
             </Link>
-            <Link to="/signup" className="Index-Signup">
+            <Link to="/signup/name" className="Index-Signup">
               <Button color="dark" text="회원가입"></Button>
             </Link>
           </div>
