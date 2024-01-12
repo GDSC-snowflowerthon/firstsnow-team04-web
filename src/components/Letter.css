@@ -1,0 +1,61 @@
+.App-letter-container{
+    width: 388px;
+    height: 500px;
+    background-color: white;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 40px;
+    border-radius:40px;
+    padding: 24px;
+}
+.App-letter-text-date{
+    color: black;
+    font-family: 'Yoonwoo';
+    font-size: 32px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+.App-letter-bar{
+    background-color: black;
+    width: 120px;
+    height: 1px;
+    margin : 0 auto 12px auto;
+}
+.App-letter-text-To{
+    color: black;
+    font-family: 'Yoonwoo';
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.App-letter-text{
+    color: black;
+    font-family: 'Yoonwoo';
+    font-size: 28px;
+    text-align: center;
+    margin: 0 0 30px 0;
+    padding: 0 10px;
+}
+.App-letter-text-From{
+    color: black;
+    font-family: 'Yoonwoo';
+    font-size: 28px;
+    text-align: right;
+    margin: 0 10px 0 0;
+}
+
+.App-letter-input{
+    width: 90%;
+    height: 60%;
+    white-space: pre-line;
+    vertical-align: top;
+
+    border-radius:40px;
+    border: 3px dashed #000;
+    margin-bottom: 10px;
+    color: black;
+    font-family: 'Yoonwoo';
+    font-size: 28px;
+    padding : 15px;
+}

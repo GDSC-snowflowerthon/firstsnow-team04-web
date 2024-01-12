@@ -1,0 +1,11 @@
+.App-MailboxNSnowman-container{
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+.App-MailboxNSnowman-mail{
+    margin-right: 7px;
+}
+.App-MailboxNSnowman-snowman{
+    margin-left: 8px;
+}
