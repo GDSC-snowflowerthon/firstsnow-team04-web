@@ -1,4 +1,6 @@
 import searchIcon from "../assets/search.svg";
+import "./Search.css";
+
 const SearchNickname = () => {
   return (
     <form className="Search-Container">

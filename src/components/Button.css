@@ -3,6 +3,10 @@ button {
   text-align: center;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .ButtonDark {
   width: 360px;
   height: 64px;

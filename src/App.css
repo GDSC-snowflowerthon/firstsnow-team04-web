@@ -112,6 +112,7 @@
 
 .main-container {
   height: 932px;
+  width: 480px;
   position: absolute;
   top: 0; /* Align to the top */
   /* right: 0; Align to the right */

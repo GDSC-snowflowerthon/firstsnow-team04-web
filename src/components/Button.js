@@ -1,16 +1,16 @@
 import "./Button.css";
 
-const Button = ({ color, text, func }) => {
+const Button = ({ value, color, text, onclick }) => {
   return (
     <div className="Button">
       {color === "dark" ? (
         /*ButtonDark*/
-        <button className="ButtonDark" onClick={func}>
+        <button value={value} className="ButtonDark" onClick={onclick}>
           {text}
         </button>
       ) : (
         /*ButtonWhite*/
-        <button className="ButtonWhite" onClick={func}>
+        <button value={value} className="ButtonWhite" onClick={onclick}>
           {text}
         </button>
       )}
