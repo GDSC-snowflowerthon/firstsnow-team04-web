@@ -2,7 +2,7 @@ import './App.css';
 import './components/Header.css';
 // import MainHeader from './components/MainHeader';
 
-import fog from './assets/fog.png';
+import fog from './assets/fog.svg';
 
 function App() {
   return (
