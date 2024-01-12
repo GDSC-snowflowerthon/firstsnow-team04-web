@@ -3,9 +3,12 @@ import Button from "../components/Button";
 
 import "./Letter.css";
 
+import { useNavigate } from "react-router-dom";
+
 function LetterWrite({ date, textTo, textFrom, id }) {
   //리렌더링을 위한 useState
   const [text, setText] = useState("");
+  const navigate = useNavigate();
   const handleButtonClick = async () => {
     if (text.trim() === "") {
       // If text is empty, show an alert
@@ -21,6 +24,7 @@ function LetterWrite({ date, textTo, textFrom, id }) {
         method: "POST",
         body: JSON.stringify(mail),
       });
+      navigate(`/main/${id}`);
     }
   };
 
