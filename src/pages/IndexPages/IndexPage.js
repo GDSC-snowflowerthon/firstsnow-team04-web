@@ -5,12 +5,16 @@ import fog from "../../assets/fog.svg";
 import snowbg1 from "../../assets/snow-bg-1.svg";
 import snowbg2 from "../../assets/snow-bg-2.svg";
 import snowbg3 from "../../assets/snow-bg-3.svg";
-import SnowFloor from "../../components/SnowFloor";
+import SnowFloor from "../../components/SnowFloor2";
 import Button from "../../components/Button";
+import MailboxNSnowman from "../../components/MailboxNSnowman2";
 
 import { Link } from "react-router-dom";
 
 const IndexPage = () => {
+  const mailopen = true;
+  const snowmantype = 1;
+
   return (
     <div className="App-bg-non">
       {/* 배경색상 + 안개 + 하늘 눈 + 바닥 눈 ++ 페이지 내용*/}
@@ -30,12 +34,18 @@ const IndexPage = () => {
           <SnowFloor />
           {/* 이 아래에 페이지 내용들 추가하면 됨. */}
           <div className="main-container">
-            
-            <Link to="/login" className="Index-Login">
-              <Button color="dark" text="로그인"></Button>
+            <MailboxNSnowman mailboxOpen={mailopen} snowmantype={snowmantype}/>
+            <Link to="/writeMail/8" className="Index-1">
+              <Button color="dark" text="홍익대"></Button>
             </Link>
-            <Link to="/signup" className="Index-Signup">
-              <Button color="dark" text="회원가입"></Button>
+            <Link to="/writeMail/7" className="Index-2">
+              <Button color="dark" text="이화여대"></Button>
+            </Link>
+            <Link to="/writeMail/6" className="Index-3">
+              <Button color="dark" text="숭실대"></Button>
+            </Link>
+            <Link to="/writeMail/5" className="Index-4">
+              <Button color="dark" text="동국대"></Button>
             </Link>
           </div>
         </div>

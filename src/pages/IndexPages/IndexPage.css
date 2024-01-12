@@ -1,6 +1,27 @@
-.Index-Login {
+.Index-1 {
   position: absolute;
   left: 50%;
-  bottom: 80px;
+  bottom: 0px;
   text-align: center;
 }
+.Index-2 {
+  position: absolute;
+  left: 50%;
+  bottom: 70px;
+  text-align: center;
+}
+.Index-3 {
+  position: absolute;
+  left: 50%;
+  bottom: 140px;
+  text-align: center;
+}
+.Index-4 {
+  position: absolute;
+  left: 50%;
+  bottom: 210px;
+  text-align: center;
+}
+
+/* 여기부터는 급하게 !!!!!!!!!! */
+

@@ -99,6 +99,15 @@
   height: 200px;
   background-color: white;
 }
+.App-bg-snow-floor-container2 {
+  width: 100%;
+  margin-top: 164px;
+}
+.App-bg-snow-floor-bottom2 {
+  width: 480px;
+  height: 320px;
+  background-color: white;
+}
 
 .overlap-container {
   position: relative;

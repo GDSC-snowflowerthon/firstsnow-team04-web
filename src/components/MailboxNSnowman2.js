@@ -1,5 +1,5 @@
 import React from "react";
-import './MailboxNSnowman2.css'
+import './MailboxNSnowman.css'
 import iconMailBoxClose from '../assets/mailbox-close.svg';
 import iconMailBoxOpen from '../assets/mailbox-open.svg';
 import iconSnowman1 from '../assets/snowman-1.svg';
